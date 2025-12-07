@@ -1,0 +1,4 @@
+SampleName,Moisture,UnitWeight
+S1,14.5,18.2
+S2,19.2,17.6
+S3,11.8,19.0

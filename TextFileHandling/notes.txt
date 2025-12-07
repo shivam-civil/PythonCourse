@@ -1,0 +1,3 @@
+I am learning file handling.
+I want to automate civil engineering tasks.
+Python will help me do that.

@@ -1,0 +1,5 @@
+SoilType=Clay
+PlasticLimit=22.5
+LiquidLimit=39.2
+SpecificGravity=2.68
+OptimumMoisture=16.4

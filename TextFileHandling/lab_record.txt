@@ -1,0 +1,4 @@
+Soil Test Record:
+Moisture Content Data:Sample 1 = 14.5%
+Sample 2 = 19.2%
+Sample 3 = 11.8%
