@@ -13,8 +13,9 @@ class Beam:
   self.item[index]="Excavation"
 
 obj=Beam(["Survey","Design","Excavation","Construction"])
-print(obj) # str call
-print([obj])  #repr call
-print(len(obj)) #len call
-print(obj[0])  #getitem  call
-               #setitem call
+print(obj)                    # str call
+print([obj])                  # repr call
+print(len(obj))               # len call
+print(obj[0])                 # getitem  call
+obj[3]="Curing"               # setitem call
+print(obj)
