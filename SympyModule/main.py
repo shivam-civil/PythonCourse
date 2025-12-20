@@ -1,3 +1,4 @@
+#                DAY - 1
 
 # CREATE SYMBOLIC VARIABLES 
 """
