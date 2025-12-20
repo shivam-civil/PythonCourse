@@ -1,2 +1,2 @@
 # PythonCourse
-A repo containing python codes when i was learning.
+A repo containing essential python notes at the moment of learning.
