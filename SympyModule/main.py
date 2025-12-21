@@ -122,7 +122,7 @@ print(bending_moment)
 #                 INTEGRATION AND BOUNDARY CONDITIONS
 
 #EXAMPLE 1:
-
+"""
 from sympy import integrate,symbols,solve,Eq
 X,L,C=symbols("X L C")                                #STEP 1: DEFINE SYMBOLS
 Shear_force=4*X                                       #STEP 2: DEFINE SHEAR FORCE
@@ -136,7 +136,7 @@ print(f"The final and complete bending Moment for cantilever beam is : {Final_be
 #NUMERICAL ASSUMPTION 
 BM_AT_C=Final_bending_moment.subs({L:50,X:20})  #ASSUME L=50M AND AT POINT C,X=20
 print(f"Bending Moment At Point C : {BM_AT_C} KNM")
-
+"""
 
 
 
