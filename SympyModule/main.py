@@ -138,14 +138,49 @@ BM_AT_C=Final_bending_moment.subs({L:50,X:20})  #ASSUME L=50M AND AT POINT C,X=2
 print(f"Bending Moment At Point C : {BM_AT_C} KNM")
 """
 
+#                                  DAY - 3 
 
+#                          simplify(),expand(),factor() and lambdify()
 
+# TASK 1 : 
+"""
+from sympy import symbols,simplify
+W,L=symbols("W L")
+M_original=W*((L**2)/8) + W*((L**2)/8)       # original moment formula 
+M_simplified=simplify(M_original)            # simplify() use case 
+print(f" Original M : {M_original}")
+print(f" Simplified M : {M_simplified}")
+"""
 
+# TASK 2 :  simplify(expr)  !=  expand(expr)
+"""
+from sympy import symbols,simplify,expand
+W,X,L = symbols("W X L")
+E=W*((L-X)**2)
+E_simplified=simplify(E)
+E_expanded=expand(E)
+print(f"Original E : {E}")
+print(f"Simplified E : {E_simplified}")
+print(f"Expanded E : {E_expanded}")       # expand it into algebraic expressions 
+"""
 
+# TASK 3 :   factor(expr)
+"""
+from sympy import symbols,factor
+W,L,X =symbols("W L X")
+M= W*(L**2) - 2*W*L*X + W*(X**2)
+M_factored=factor(M)
+print(f"Original M : {M}")
+print(f"Factored M : {M_factored}")
+"""
 
+#                                   lambdify()
+"""
+from sympy import symbols,lambdify
+W,L=symbols("W L")
+M=W*(L**2)/8
+M_func=lambdify((W,L),M)
+print(f"The bending Moment : {M_func(10,4):.2f} KNM")     # W=10,L=4
+"""
 
-
-
-
-
-
+# THIS IS THE END FOR NOW. I WILL BE UPDTAING THIS WHEN I LEARN SOME OTHER VALUABLE STUFFS IN IT .
